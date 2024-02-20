@@ -1,0 +1,61 @@
+%YAML 1.1
+---
+filename_prefix: output.scream.diagnose_err
+Averaging Type: Instant
+Max Snapshots Per File: 56
+Fields:
+  Physics PG2:
+    Field Names:
+    - SW_flux_dn_at_model_bot
+    - SW_flux_up_at_model_bot
+    - LW_flux_dn_at_model_bot
+    - LW_flux_up_at_model_bot
+    - SW_flux_up_at_model_top
+    - SW_flux_dn_at_model_top
+    - LW_flux_up_at_model_top
+    - pseudo_density
+    - ps
+    - surf_sens_flux
+    - surf_evap    
+    - surf_radiative_T    
+    - T_mid
+    - qv
+    - U
+    - V 
+    - VapWaterPath
+    - precip_liq_surf_mass_flux
+    - precip_ice_surf_mass_flux    
+    - RelativeHumidity_at_850hPa
+    - RelativeHumidity_at_700hPa
+    - RelativeHumidity_at_500hPa
+    - T_mid_at_850hPa
+    - T_mid_at_700hPa
+    - T_mid_at_500hPa
+    - T_mid_at_200hPa
+    - omega_at_500hPa
+    - omega_at_700hPa
+    - omega_at_850hPa        
+    - z_mid_at_500hPa
+    - qv_2m
+    - T_2m    
+    - SeaLevelPressure    
+    - physics_T_mid_tend
+    - physics_qv_tend
+    - physics_horiz_winds_tend    
+    - mlcorrection_T_mid_tend
+    - mlcorrection_qv_tend
+    - mlcorrection_horiz_winds_tend
+    - sfc_alb_dif_vis
+    - qv_at_bot
+    - T_mid_at_bot
+    - U_at_bot
+    - V_at_bot
+    
+output_control:
+  Frequency: 1
+  frequency_units: nsteps
+  MPI Ranks in Filename: false
+
+Restart:
+  force_new_file: true
+  Perform Restart: false

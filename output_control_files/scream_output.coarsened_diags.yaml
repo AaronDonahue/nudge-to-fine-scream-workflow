@@ -1,0 +1,35 @@
+%YAML 1.1
+---
+filename_prefix: output.scream.remapped_diags
+Averaging Type: Average
+Max Snapshots Per File: 56 #one file per week
+vertical_remap_file: /usr/gdata/climdat/eamxx-ml/maps/map_ne120pg2_to_ne30pg2_20230912_vert_enhanced.nc
+horiz_remap_file: /usr/gdata/climdat/eamxx-ml/maps/map_ne120pg2_to_ne30pg2_20230912_vert_enhanced.nc
+Fields:
+  Physics PG2:
+    Field Names:
+    - RelativeHumidity_at_850hPa
+    - RelativeHumidity_at_700hPa
+    - RelativeHumidity_at_500hPa
+    - T_mid_at_850hPa
+    - T_mid_at_700hPa
+    - T_mid_at_500hPa
+    - T_mid_at_200hPa
+    - omega_at_500hPa
+    - omega_at_700hPa
+    - omega_at_850hPa        
+    - z_mid_at_500hPa
+    - qv_2m
+    - T_2m    
+    - SeaLevelPressure    
+    - physics_T_mid_tend
+    - physics_qv_tend
+    - physics_horiz_winds_tend    
+    - VapWaterPath
+    - landfrac
+output_control:
+  Frequency: 3
+  frequency_units: nhours
+  MPI Ranks in Filename: false
+Restart:
+  force_new_file: true
